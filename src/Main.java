@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class Task1 {
+public class Main {
     public static void main(String[] args) {
         //variables
         Scanner scan = new Scanner(System.in);
@@ -15,8 +15,8 @@ public class Task1 {
         int intCount = 0;
         int intBreak = 0;
         int intFound = 0;
-        int total = 0;
 
+        double total = 0.0;
         double averageNum = 0.0;
 
         boolean breakValid = false;
@@ -33,6 +33,8 @@ public class Task1 {
             }
             total += dataPoints[i];
         }
+
+
 
         intSearch = InputHelper.getRangedInt(scan, "Enter an integer to search for:", 1, 100);
 
